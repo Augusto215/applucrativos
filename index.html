@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+
+</head>
+
+<body>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lato:wght@700;900&display=swap');
+
+*
+{
+    font-family: 'Lato' !important;
+    font-weight: 700;
+}
+
+body
+{
+    background: rgb(45, 45, 45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a
+{
+    text-decoration: none !important;
+}
+
+
+    </style>
+<header class="p-3" style="max-width:30rem; width: 100%; background: rgb(20, 20, 20); border-radius:20px;">
+
+<div class="d-flex justify-content-between" style="gap:1rem;">
+<div class="d-flex align-items-center" style="gap:.5rem">
+<img style="height: 2rem;" src="assets\img\money-5948190_640.webp"><span style="color:#fff; line-height: 1; font-weight: 900;">CODIGOS<br>LUCRATIVOS</span>
+</div>
+<span class="d-flex align-items-center" style="background: linear-gradient(to right, rgb(4 68 71),rgb(1 148 133)); padding:.3rem 2rem; border-radius:8px; color:#fff;">R$ 0.00</span>
+</div>
+
+</header> 
+
+<div class="container d-flex justify-content-center">
+<div class="mt-3  p-3 d-flex justify-content-center" style="max-width:30rem; width: 100%; background: linear-gradient(to right, rgb(98, 98, 98), rgb(169, 169, 169)); border-radius:20px">
+<span class="text-center" style="color:#fff !important; font-size:1.1rem !">Você ganhou um teste grátis!</span>
+</div>
+</div> 
+
+<div class="container mt-3 mb-3">
+    <div class="d-flex container flex-column justify-content-center align-items-center" style="max-width:30rem; padding:60px 10px 20px;  border-radius:15px; background: #fff !important;">
+<img style="height: 3rem;" src="assets\img\Amazon-Logo.png">
+<span class="mt-4 text-center" style="font-size: 12px; font-weight: 500;"> Código gerado abaixo:</span>
+<span style="font-weight: 900;">0K10M5Z</span>
+<div class="container mt-3 p-2 d-flex justify-content-center" style="background-color: #e7e7e7; border-radius:12px;">
+<span class="text-center" style="font-size: .8rem; font-weight: 700;">Para confirmar que você é um <strong>HUMANO</strong>
+escolha abaixo qual desses códigos é o seu que foi <strong>gerado!</strong></span></div>
+
+
+<div class="d-flex justify-content-start flex-column w-100">
+<span class="mt-4 cupom" style="width:fit-content; border-radius:4px; padding:.4rem 1rem; font-size:.8rem !important; background-color: #3b3b3b; color:#fff; margin-left:1rem;">0K10M5Z</span>
+
+<span class="mt-4 cupom" style="width:fit-content; border-radius:4px; padding:.4rem 1rem; font-size:.8rem !important; background-color: #3b3b3b; color:#fff; margin-left:.5rem;">F9Z67SB</span>
+
+</div>
+
+<a class="mt-4 p-1 enviar text-center" style="color:#fff;     background: linear-gradient(to right, rgb(4 68 71),rgb(1 148 133)); width: 100%; border-radius:8px; font-size:.8rem;">
+    Enviar
+</a>
+    </div>
+
+</div>
+
+<div class="main-container align-items-center justify-content-center" style="background:rgba(0, 0, 0, 0.35); height: 100vh; width:100vw; position: fixed; display: none;">
+
+    <div class="container">
+    <div class="d-flex flex-column  align-items-center" style="width:30rem; max-width:100%; background: #fff; border-radius:12px;">
+
+        Opa deu certo!
+
+        <a href="nike.html">Próximo</a>
+
+    </div>
+</div>
+
+</div>
+<span class="mb-3 text-center" style="color:#fff !important; font-size:.8rem">©2023 Todos os seus direitos reservados.</span>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script>
+
+    cupom = document.querySelectorAll('.cupom');
+    
+    cupom.forEach((button)=> 
+    {
+        button.addEventListener('click', function()
+        {   
+            cupom.forEach(btn => btn.style.background = '#3b3b3b');
+            this.style.background = 'linear-gradient(to right, black, red)'
+
+
+        })
+    })
+        
+    
+    enviar = document.querySelector('.enviar');
+    mainContainer = document.querySelector('.main-container')
+
+    enviar.addEventListener('click', function()
+    {
+        mainContainer.style.display = 'flex';
+    })
+        </script>
+
+
+</body>
+
+
+
+
+</html>
