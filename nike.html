@@ -25,6 +25,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 a
@@ -33,8 +34,13 @@ a
 }
 
 
+header span
+{
+    font-size: 1.2rem;
+}
+
     </style>
-<header class="p-3" style="max-width:30rem; width: 100%; background: rgb(20, 20, 20); border-radius:20px;">
+<header class="p-3" style="max-width:30rem; width: 100%; background: rgb(20, 20, 20); border-radius:20px; position: fixed; top:0;">
 
 <div class="d-flex justify-content-between" style="gap:1rem;">
 <div class="d-flex align-items-center" style="gap:.5rem">
@@ -46,35 +52,49 @@ a
 </header> 
 
 <div class="container d-flex justify-content-center">
-<div class="mt-3  p-3 d-flex justify-content-center" style="max-width:30rem; width: 100%; background: linear-gradient(to right, rgb(98, 98, 98), rgb(169, 169, 169)); border-radius:20px">
-<span class="text-center" style="color:#fff !important; font-size:1.1rem !">Você ganhou um teste grátis!</span>
+<div class=" p-3 d-flex justify-content-center" style="margin-top:5rem; max-width:30rem; width: 100%; background: linear-gradient(to right, rgb(98, 98, 98), rgb(169, 169, 169)); border-radius:20px">
+<span class="text-center" style="color:#fff !important; font-size:1.3rem !">Você ganhou um teste grátis!</span>
 </div>
 </div> 
 
 <div class="container mt-3 mb-3">
     <div class="d-flex container flex-column justify-content-center align-items-center" style="max-width:30rem; padding:60px 10px 20px;  border-radius:15px; background: #fff !important;">
 <img style="height: 3rem;" src="assets\img\33e63d5adb0da6b303a83901c8e8463a (1).png">
-<span class="mt-4 text-center" style="font-size: 12px; font-weight: 500;"> Código gerado abaixo:</span>
-<span style="font-weight: 900;">0K10M5Z</span>
+<span class="mt-5 text-center" style="font-size: 1rem; font-weight: 500;"> Código gerado abaixo:</span>
+<span style="font-weight: 900; font-size:1.2rem">0K10M5Z</span>
 <div class="container mt-3 p-2 d-flex justify-content-center" style="background-color: #e7e7e7; border-radius:12px;">
-<span class="text-center" style="font-size: .8rem; font-weight: 700;">Para confirmar que você é um <strong>HUMANO</strong>
+<span class="text-center" style="font-size: 1rem; font-weight: 700;">Para confirmar que você é um <strong>HUMANO</strong>
 escolha abaixo qual desses códigos é o seu que foi <strong>gerado!</strong></span></div>
 
 
 <div class="d-flex justify-content-start flex-column w-100">
-<span class="cupom mt-4" style="width:fit-content; border-radius:4px; padding:.4rem 1rem; font-size:.8rem !important; background-color: #3b3b3b; color:#fff; margin-left:1rem;">0K10M5Z</span>
+<span class="mt-5 cupom" style="width:fit-content; border-radius:4px; padding:.4rem 1rem; font-size:1rem !important; background-color: #3b3b3b; color:#fff; margin-left:1rem;">0K10M5Z</span>
 
-<span class="cupom mt-4" style="width:fit-content; border-radius:4px; padding:.4rem 1rem; font-size:.8rem !important; background-color: #3b3b3b; color:#fff; margin-left:.5rem;">F9Z67SB</span>
+<span class="mt-5 cupom" style="width:fit-content; border-radius:4px; padding:.4rem 1rem; font-size:1rem !important; background-color: #3b3b3b; color:#fff; margin-left:.5rem;">F9Z67SB</span>
 
 </div>
 
-<a class="mt-4 p-1 text-center" style="color:#fff;     background: linear-gradient(to right, rgb(4 68 71),rgb(1 148 133)); width: 100%; border-radius:8px; font-size:.8rem;">
+<a class="mt-4 p-1 enviar text-center" style="color:#fff;     background: linear-gradient(to right, rgb(4 68 71),rgb(1 148 133)); width: 100%; border-radius:8px; font-size:1rem;">
     Enviar
 </a>
     </div>
 
 </div>
-<span class="mb-3 text-center" style="color:#fff !important; font-size:.8rem">©2023 Todos os seus direitos reservados.</span>
+
+<div class="main-container align-items-center justify-content-center" style="background:rgba(0, 0, 0, 0.35);top:0; height: 100vh; width:100vw; position: fixed; display: none; ">
+
+    <div class="container">
+    <div class="d-flex flex-column  align-items-center" style="width:30rem; max-width:100%; background: #fff; border-radius:12px;">
+
+        Opa deu certo!
+
+        <a href="nike.html">Próximo</a>
+
+    </div>
+</div>
+
+</div>
+<span class="mb-3 text-center" style="color:#fff !important; font-size:1rem">©2023 Todos os seus direitos reservados.</span>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -95,7 +115,15 @@ escolha abaixo qual desses códigos é o seu que foi <strong>gerado!</strong></s
     })
         
     
+    enviar = document.querySelector('.enviar');
+    mainContainer = document.querySelector('.main-container')
+
+    enviar.addEventListener('click', function()
+    {
+        mainContainer.style.display = 'flex';
+    })
         </script>
+
 
 </body>
 
